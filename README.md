@@ -6,7 +6,7 @@
 ---
 
 ## 🌐 **Live Demo**
-🔗 **Frontend:** [https://portfolio-tracker-frontend.vercel.app](#)  
+🔗 **Frontend:** [https://portfolio-tracker-web-app.vercel.app/](#)  
 🔗 **Backend API:** [https://portfolio-tracker-backend.onrender.com](#)
 
 ---
