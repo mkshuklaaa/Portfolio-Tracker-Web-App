@@ -10,6 +10,11 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/portfolio", require("./routes/portfolioRoutes"));
 
+app.get("/", (req, res) => {
+  res.send("🚀 Portfolio Tracker Backend is Running Successfully!");
+});
+
+
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
@@ -22,3 +27,4 @@ mongoose.connect(process.env.MONGO_URI, {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
