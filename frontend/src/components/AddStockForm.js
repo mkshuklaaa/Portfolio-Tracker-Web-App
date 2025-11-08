@@ -8,7 +8,7 @@ const AddStockForm = ({ onStockAdded }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/api/portfolio/add', {
+    await axios.post('https://portfolio-tracker-web-app.onrender.com/api/portfolio/add', {
       userId: "user1",
       ...formData
     });
@@ -27,3 +27,4 @@ const AddStockForm = ({ onStockAdded }) => {
 };
 
 export default AddStockForm;
+
