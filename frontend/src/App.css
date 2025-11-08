@@ -1,0 +1,139 @@
+/* 🎨 Global Layout */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* 🌟 Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* 💼 Title */
+.app-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #ff758c, #a02bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 🧾 Input Box */
+.input-box {
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.input-box input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+}
+
+.input-box input::placeholder {
+  color: #ccc;
+}
+
+.add-btn {
+  background: linear-gradient(to right, #ff758c, #a02bff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* 📊 Portfolio Section */
+.portfolio-box {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  width: 90%;
+  max-width: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+/* 💰 Profit Colors */
+.profit {
+  color: #4caf50;
+}
+
+.loss {
+  color: #ff5252;
+}
+
+.neutral {
+  color: #bbb;
+}
+
+/* 📈 Totals */
+.totals {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #4fa3ff;
+}
+
+/* 💫 Animation for hover on table rows */
+tr {
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+tr:hover {
+  transform: scale(1.01);
+}
