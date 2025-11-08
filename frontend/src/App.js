@@ -20,7 +20,7 @@ function App() {
 
   const handleAdd = async () => {
     try {
-      await axios.post("https://portfolio-tracker-web-app.onrender.com/api/portfolio/user1/api/portfolio/add", {
+      await axios.post("https://portfolio-tracker-web-app.onrender.com/api/portfolio/add", {
         userId: "user1",
         ticker,
         quantity,
