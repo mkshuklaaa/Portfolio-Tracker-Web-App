@@ -11,7 +11,7 @@ function App() {
 
   const fetchPortfolio = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/portfolio/user1");
+      const response = await axios.get("https://portfolio-tracker-web-app.onrender.com/api/portfolio/user1");
       setPortfolio(response.data);
     } catch (err) {
       console.error("Error fetching portfolio:", err);
